@@ -1,0 +1,7 @@
+workflows:
+  ios-build:
+    name: iOS Swift Build
+    environment:
+      xcode: latest
+    scripts:
+      - xcodebuild clean build -scheme HardDemonApp -destination 'generic/platform=iOS'
